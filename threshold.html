@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Threshold | Null Sector Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet (absolute path!) -->
+  <link
+    rel="stylesheet"
+    href="/game-dev-site/assets/css/style.css"
+  />
+</head>
+<body>
+
+  <!-- NAV HEADER -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo" />
+      <span>Null Sector Studios</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="threshold.html" class="active">Threshold</a>
+      <a href="index.html#community">Community</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section id="game-hero">
+    <img
+      src="assets/img/threshold-banner.jpg"
+      alt="Threshold Banner"
+      class="game-banner"
+    />
+  </section>
+
+  <main>
+    <!-- DESCRIPTION -->
+    <section id="game-description">
+      <h1>Threshold</h1>
+      <p>
+        Threshold is a horror game created by Nexoid Games. Inspired by Five Nights at Freddy’s,  
+        Indigo Park, DOORS, Poppy Playtime and SCP, you play a researcher for Kovenox Industries  
+        —a company that mastered portal travel using large stone gates. After a power surge  
+        rips open a portal to a mysterious dimension, entities pour out. In this chapter-based  
+        game you’ll uncover the secrets of the Threshold, one eerie level at a time.
+      </p>
+    </section>
+
+    <!-- CHAPTERS LIST -->
+    <section id="chapters">
+      <h2>Chapter Breakdown</h2>
+      <ul>
+        <li>
+          <strong>Chapter 0: “Ground Zerø”</strong> – Demo release on Steam & GameJolt.
+        </li>
+        <li>
+          <strong>Chapter 1: Echoes of Alpha 5</strong> – Full game (free).
+        </li>
+        <li>
+          <strong>Chapters 2+ (TBA)</strong> – Paid expansions (pricing varies).
+        </li>
+      </ul>
+    </section>
+
+    <!-- DOWNLOAD / DEMO -->
+    <section id="download">
+      <h2>Play the Demo</h2>
+      <p>
+        Chapter 0: &ldquo;Ground Zerø&rdquo; is available now.  
+        <a href="https://store.steampowered.com/app/xxxxx" target="_blank">Download on Steam</a>  
+        or  
+        <a href="https://gamejolt.com/games/threshold/xxxxx" target="_blank">Play on GameJolt</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Null Sector Studios. All rights reserved.</p>
+  </footer>
+
+  <!-- AUTO-UPDATE YEAR -->
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
