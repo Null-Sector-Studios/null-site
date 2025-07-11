@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <title>Projects | Null Sector Studios</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
-
   <header>
     <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo" width="60"/>
+      <img src="assets/img/logo.png" alt="Logo" />
       <span>Null Sector Studios</span>
     </div>
     <nav>
@@ -24,22 +24,30 @@
     <section id="projects-page">
       <h1>Our Projects</h1>
       <div class="project-grid">
+        <!-- Example card: copy/paste to add more -->
         <div class="project-card">
+          <img src="assets/img/project-alpha.jpg" alt="Project Alpha" />
           <h3>Threshold</h3>
-          <p>Horror Game, Info will be released soon.</p>
+          <p>Information Unavailable at this time.</p>
+          <a href="#" class="card-btn">Learn More</a>
         </div>
         <div class="project-card">
+          <img src="assets/img/vr-quest.jpg" alt="VR Quest" />
           <h3>VR Bodycam Shooter</h3>
-          <p>No Information Available as of this moment.</p>
+          <p>Information not available at this time.</p>
+          <a href="#" class="card-btn">Learn More</a>
         </div>
-        <!-- Add more project cards here -->
+        <!-- …add your own cards… -->
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Null Sector Studios. All rights reserved.</p>
+    <p>© <span id="year2"></span> Null Sector Studios. All rights reserved.</p>
   </footer>
 
+  <script>
+    document.getElementById('year2').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
