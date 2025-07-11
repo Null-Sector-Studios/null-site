@@ -1,1 +1,43 @@
+/* assets/css/style.css */
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: #222;
+  color: #fafafa;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-right: 1rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.hero {
+  background: #444;
+  color: #fafafa;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+main section {
+  padding: 2rem 1rem;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
