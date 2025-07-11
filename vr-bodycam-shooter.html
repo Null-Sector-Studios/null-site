@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VR Bodycam Shooter | Null Sector Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet (absolute path!) -->
+  <link
+    rel="stylesheet"
+    href="/game-dev-site/assets/css/style.css"
+  />
+</head>
+<body>
+
+  <!-- NAV HEADER -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo" />
+      <span>Null Sector Studios</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="threshold.html">Threshold</a>
+      <a href="vr-bodycam-shooter.html" class="active">VR Bodycam Shooter</a>
+      <a href="index.html#community">Community</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section id="game-hero">
+    <img
+      src="assets/img/vr-bodycam-banner.jpg"
+      alt="VR Bodycam Shooter Banner"
+      class="game-banner"
+    />
+  </section>
+
+  <main>
+    <!-- DESCRIPTION -->
+    <section id="game-description">
+      <h1>
+        VR Bodycam Shooter 
+        <span class="temp">(Temporary Name)</span>
+      </h1>
+      <p>
+        This is an early-concept VR first-person shooter viewed entirely
+        through a body-worn camera. We’re exploring tactical combat
+        scenarios, immersive environments, and real-time physics—all in VR.
+        Details are coming soon as we prototype core mechanics.
+      </p>
+    </section>
+
+    <!-- CONCEPT FEATURES -->
+    <section id="features">
+      <h2>Concept Features</h2>
+      <ul>
+        <li>Tactical VR combat from a first-person bodycam angle</li>
+        <li>Dynamic physics interactions and destructible environments</li>
+        <li>Multiplayer training sims and scenario planning</li>
+        <li>Immersive UI elements projected in-world</li>
+      </ul>
+    </section>
+
+    <!-- COMING SOON & COMMUNITY -->
+    <section id="coming-soon">
+      <h2>Stay Tuned</h2>
+      <p>
+        We’ll be sharing prototypes, concept art, and dev diaries here
+        soon. Join our Discord or hop into our VRChat world for early
+        peeks and feedback.
+      </p>
+      <a href="https://discord.gg/yourinvite" class="btn discord">Discord</a>
+      <a href="https://vrch.at/yourinvite" class="btn vrchat">VRChat</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Null Sector Studios. All rights reserved.</p>
+  </footer>
+
+  <!-- AUTO-UPDATE YEAR -->
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
