@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <title>Projects | Null Sector Studios</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link
+    rel="stylesheet"
+    href="/null-site/assets/css/style.css"
+  />
 </head>
 <body>
+
+  <!-- NAV HEADER -->
   <header>
     <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo" />
+      <img src="assets/img/logo.png" alt="Null Sector Studios Logo" />
       <span>Null Sector Studios</span>
     </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html" class="active">Projects</a>
-      <a href="index.html#community">Community</a>
-      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
@@ -24,30 +35,38 @@
     <section id="projects-page">
       <h1>Our Projects</h1>
       <div class="project-grid">
-        <!-- Example card: copy/paste to add more -->
+        <!-- Threshold Card -->
         <div class="project-card">
-          <img src="assets/img/project-alpha.jpg" alt="Project Alpha" />
+          <img src="assets/img/threshold-banner.jpg" alt="Threshold Banner" />
           <h3>Threshold</h3>
-          <p>Information Unavailable at this time.</p>
-          <a href="#" class="card-btn">Learn More</a>
+          <p>
+            A chapter-based horror game. You’re a Kovenox Industries researcher
+            uncovering a dark dimension through ancient portals.
+          </p>
+          <a href="threshold.html" class="card-btn">View Project</a>
         </div>
+
+        <!-- VR Bodycam Shooter Card -->
         <div class="project-card">
-          <img src="assets/img/vr-quest.jpg" alt="VR Quest" />
+          <img src="assets/img/vr-bodycam-banner.jpg" alt="VR Bodycam Banner" />
           <h3>VR Bodycam Shooter</h3>
-          <p>Information not available at this time.</p>
-          <a href="#" class="card-btn">Learn More</a>
+          <p>
+            Early-concept VR FPS viewed through a body-worn camera. Tactical
+            combat meets immersive physics.
+          </p>
+          <a href="vr-bodycam-shooter.html" class="card-btn">View Project</a>
         </div>
-        <!-- …add your own cards… -->
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© <span id="year2"></span> Null Sector Studios. All rights reserved.</p>
+    <p>© <span id="year"></span> Null Sector Studios. All rights reserved.</p>
   </footer>
 
   <script>
-    document.getElementById('year2').innerText = new Date().getFullYear();
+    document.getElementById('year').innerText = new Date().getFullYear();
   </script>
 </body>
 </html>
