@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <title>Null Sector Studios</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
-
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo" width="60"/>
-      <span>Null Sector Studios</span>
+  <!-- VIDEO BACKGROUND HERO -->
+  <section id="hero">
+    <video autoplay muted loop id="bgvid" poster="assets/img/hero.jpg">
+      <source src="assets/img/hero.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <header>
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <span>Null Sector Studios</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="hero-content">
+      <h1>Crafting Immersive Worlds</h1>
+      <p>Unleashing purple-powered adventures in VR, PC & Console.</p>
+      <a href="projects.html" class="btn">Explore Projects</a>
     </div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="#community">Community</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  </section>
 
   <main>
-    <section id="hero">
-      <h1>Unavailable</h1>
-      <p>Not Available at this time</p>
-    </section>
-
     <section id="about">
       <h2>About Us</h2>
-      <p>Not available at this time.</p>
+      <p>We fuse cutting-edge tech with bold design. From prototype to release, our passion is in the code and the art.</p>
     </section>
 
     <section id="services">
-      <h2>Technology & Services</h2>
+      <h2>Our Expertise</h2>
       <ul>
-        <li>Engine Expertise: Unity, Unreal</li>
-        <li>Custom Tool Development</li>
-        <li>3D Art Pipelines & Shaders</li>
+        <li>Unity & Unreal Engine</li>
+        <li>Custom Shader & Tool Dev</li>
+        <li>3D Art Pipelines & VFX</li>
       </ul>
     </section>
 
     <section id="community">
       <h2>Join Our Community</h2>
       <a href="https://discord.gg/ZGcUmNQSQ9" class="btn discord">Discord</a>
-      <a href="Unavailable" class="btn vrchat">VRChat</a>
+      <a href="Not Available" class="btn vrchat">VRChat</a>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email us at <a href="nexoid.devguy@gmail.com">nexoid.devguy@gmail.com</a></p>
+      <p>Questions, partnerships, or jobs? <a href="mailto:nexoid.devguy@gmail.com">Email us</a>.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Null Sector Studios. All rights reserved.</p>
+    <p>© <span id="year"></span> Null Sector Studios. All rights reserved.</p>
   </footer>
 
+  <script>
+    // auto-update year
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
