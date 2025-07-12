@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Team | Null Sector Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/null-site/assets/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Null Sector Studios Logo" />
+      <span>Null Sector Studios</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="team">
+      <h1>Meet the Team</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="assets/img/owner1.jpg" alt="Alex Mercer" />
+          <h3>Alex Mercer</h3>
+          <p>Founder & Lead Designer</p>
+        </div>
+        <div class="project-card">
+          <img src="assets/img/owner2.jpg" alt="Samara Vale" />
+          <h3>Samara Vale</h3>
+          <p>Co-Founder & Art Director</p>
+        </div>
+        <div class="project-card">
+          <img src="assets/img/dev1.jpg" alt="Jordan Ray" />
+          <h3>Jordan Ray</h3>
+          <p>Senior Programmer</p>
+        </div>
+        <!-- Add more team members here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Null Sector Studios. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
